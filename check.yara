@@ -1,5 +1,6 @@
-rule EarthWorm : LinuxMalware
 {
+    rule EarthWorm : LinuxMalware
+
     meta:
        author = "AlienVault Labs"
        copyright = "Alienvault Inc. 2019"
@@ -16,14 +17,10 @@ rule EarthWorm : LinuxMalware
     condition:
         $elf at 0 and 2 of them
 }
-
- 
-
+{
 rule Termite : LinuxMalware
 
-{
- meta:
-
+  meta:
     author = "AlienVault Labs"
     copyright = "Alienvault Inc. 2019"
     license = "Apache License, Version 2.0"
